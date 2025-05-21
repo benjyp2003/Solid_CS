@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Solid_Principle
 {
-    internal interface IEmailAlert
+    internal interface IAlert
     {
+        void Alert(string message, string to);
     }
 }

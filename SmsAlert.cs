@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Solid_Principle
 {
-    internal class DatabaseLogger : ILogger
+    public class SmsAlert : IAlert
     {
-        public void Log(string message)
+        public void Alert(string number, string message)
         {
-            Console.WriteLine("saving message to database..");
+            Console.WriteLine($"Sending SMS: -{message}- to {number}");
         }
     }
 }
